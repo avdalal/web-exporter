@@ -1,0 +1,25 @@
+
+.component{ 
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  .par-div {
+    display: grid;
+  }
+  .component-name {
+    text-align: center;
+    color: rgb(255, 0, 0);
+    font-size: 12px;
+    font-weight: bold;
+    align-self: end;
+  }
+  
+  .extention-title {
+    text-align: center;
+    padding: 5px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: rgb(85, 6, 230);
+  }
