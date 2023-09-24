@@ -8,8 +8,6 @@ const componentNames = [
 componentNames.forEach(element => {
     const components = document.getElementsByClassName(element);
     Array.from(components).forEach(comp => {
-        comp.classList.add("component");
-
         addComName(comp, element) ;
     });
 });
@@ -26,13 +24,12 @@ contentExportValues.forEach(element => {
     const components = document.querySelectorAll(`[contentexport=${element}]`);
 
     Array.from(components).forEach(comp => {
-        comp.classList.add("component");
-
         addComName(comp, element) 
     });
 });
 
 const addComName = ( comp: Element, element: string) => {
+        comp.classList.add("component");
         // Check if a .par-div already exists
         if (!comp.querySelector('.par-div')) {
             const pardiv = document.createElement("div");
