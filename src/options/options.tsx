@@ -1,6 +1,8 @@
 import * as React from 'react'
-import { render } from 'react-dom'
+import { createRoot } from 'react-dom/client';
 import './options.css'
+
+
 
 const App: React.FC<{}> = () => {
   return (
@@ -12,4 +14,6 @@ const App: React.FC<{}> = () => {
 
 const root = document.createElement('div')
 document.body.appendChild(root)
-render(<App />, root)
+
+const reactRoot = createRoot(root)
+reactRoot.render(<App />)
