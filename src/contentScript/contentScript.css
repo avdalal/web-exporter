@@ -4,6 +4,11 @@
     border-radius: 5px;
     padding: 5px;
   }
+  .child-component{ 
+    border: 1px solid rgb(10, 38, 216);
+    border-radius: 5px;
+    padding: 5px;
+  }
   .par-div {
     display: grid;
   }
@@ -13,6 +18,7 @@
     font-size: 12px;
     font-weight: bold;
     align-self: end;
+    z-index: 100;
   }
   
   .extention-title {
